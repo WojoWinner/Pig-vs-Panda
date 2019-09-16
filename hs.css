@@ -1,0 +1,295 @@
+body
+{
+	filter: grayscale(100%);
+}
+#Mapa
+{
+	background-image:url('img/plansza.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	height:320px;
+	text-align:center;
+	width:1333px;
+	clear:both;
+}
+#TLeg
+{
+	 background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+#Legier
+{
+	position:relative;
+	right:-81.5%;
+	width:150px;
+	height:165px;
+    background-image:url("img/Panda.png");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+#czescLegiera
+{
+	background-image:url('img/LCzescmapypandy.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:799.8px;
+	text-align:center;
+	height:186px;
+	float:left;
+}
+#blok
+{
+	background-image:url('img/PCzescmapypandy.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	float:left;
+	width:533.2px;
+	height:160px;
+}
+#warto
+{
+	background-image:url("img/PasekHealthLegiera.png");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:27px;
+	height:26px;
+}
+#WartosciPaskaHpLegiera
+{
+	background-image:url("img/PasekWartosciHpLegiera.png");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	
+}
+#MocLegiera
+{
+	/*background-image:url('okladka.png');*/
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position:relative;
+	bottom:-15%;
+	position:relative;
+	width:70px;
+	height:70px;
+	clip-path: circle(40px at center);
+	background-color:cyan;
+}
+#divmocy
+{
+	
+	background-image:url('img/RzutKatanami.png');
+	/*background-repeat:no-repeat;*/
+	background-size:100% 100%;
+	position:relative;
+	width:70px;
+	height:70px;
+	text-align:center;
+	display:block;
+	line-height:70px;
+   
+	
+}
+#divmocy:hover
+{
+	cursor:pointer;
+	filter: drop-shadow(1px 1px 10px gold);
+	color:gold;
+}
+.RozbicieMocy
+{
+	
+	display:block;
+	width:60px;
+	height:60px;
+	float:right;
+	clip-path: circle(40px at center);
+	position:relative;
+	top:-48%;
+
+}
+.MocyLegiera
+{
+	
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:60px;
+	height:60px;
+	display:block;
+	position:relative;
+	top:0%;
+	left:0%;
+}
+.MocyLegiera:hover
+{
+	cursor:pointer;
+	filter: drop-shadow(1px 1px 10px green);
+}
+#WyswietlaczLegiera
+{
+	width:75px;
+	height:75px;
+	position:relative;
+	top:35%;
+	right:-30%;
+	display:none;
+}
+#czescPaskudy
+{
+	background-image:url('img/Paskudamap2.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	text-align:center;
+	width:706.483px;
+	float:left;
+}
+#anim
+{
+	 background-repeat:no-repeat;
+    background-size:100% 100%;
+}
+#wieprz
+{
+	background-image:url('img/Paskudamap.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:626.367px;
+	height:170px;
+	float:left;
+}
+#Paskuda
+{
+	background-image:url("img/paskuda0.png");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+    width:160px;
+	height:170px;
+	
+}
+#MocPaskudy
+{
+	position:relative;
+	bottom:-14%;
+	clip-path: circle(65px at center);
+	border-radius:50px;
+	width:100px;
+	height:100px;
+	right:-80%;
+	
+}
+#divmocyp
+{
+	border-radius:53px;
+	background-image:url('img/snk.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:53px;
+	height:53px;
+	position:relative;
+	top:23%;
+	left:23%;
+	display:none;
+	clip-path: circle(40px at center);
+	text-align:center;
+}
+.ObeznanaMocWMocy
+{
+	/*background-image:url('polowa.png');*/
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:55px;
+	height:32px;
+	clip-path: circle(40px at center);
+	text-align:center;
+	line-height:32px;
+	top:-17%;
+    position:relative;
+    display:block;
+    float:left;
+}
+.MocMocy
+{
+
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:40px;
+	height:30px;
+	clip-path: circle(30px at center);
+	border-radius:50px;
+	text-align:center;
+	line-height:32px;
+    position:relative;
+	left:15%;
+	top:-68%;
+    display:block;
+    cursor:not-allowed;
+}
+#Ryk
+{
+	background-image:url('img/RykPaskudy.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position:relative;
+	left:50%;top:50%;
+	width:50px;
+	height:50px;
+	border-radius:30px;
+	display:none;
+}
+#wartop
+{
+	background-image:url('img/PasekPaskudy.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	width:26px;
+	height:25px;
+	float:right;
+}
+#WartosciPaskaHpPaskudy
+{
+	background-image:url('img/PasekHealthPaskudy.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+#WyswietlaczPaskudy
+{
+	width:50px;
+	height:50px;
+	position:relative;
+	top:35%;
+	right:-30%;
+	display:none;
+	/*background-repeat:no-repeat;*/
+}
+#Tury
+{
+	width:100%;
+	height: 70px;
+	line-height: 70px;
+    background-color:black;
+	display: none;
+	position: relative;
+	top:40%;
+}
+#tura
+{
+font-size:45px;
+}
+#EndGame
+{
+	width:100%;
+	height:70px;
+	position: relative;
+	top:40%;
+	color:whitesmoke;
+	line-height: 70px;
+	font-size: 45px;
+	text-align: center;
+	display: none;
+	background-color: black;
+}
+#endg:hover
+{
+	color:greenyellow;
+	cursor: pointer;
+}
