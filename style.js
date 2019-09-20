@@ -12,11 +12,25 @@ var Mochi=new Audio("Audio/Mochi.wav");
 var ThunderStrike=new Audio("Audio/ThunderStrike.wav");
 var StarFall=new Audio("Audio/StarFall.wav");
 var Promien=new  Audio("Audio/Promien.wav");
+var Ryk=new  Audio("Audio/Ryk.wav");
+var Skorka=new  Audio("Audio/Skorka.wav");
+var HP=new  Audio("Audio/HP.wav");
+var DivineHammer=new Audio("Audio/DivineHammer.wav");
+//var Music=new Audio("Audio/Music.wav");
 
+//MusicPlay();
+ var blokada=false;
  
 	setTimeout(function start(){document.body.style.filter="grayscale(0%)";},500);
-	
-
+ function Hammer()
+ {
+	 let Divine='<b style="color:gold;">'+"DivineHammer"+'<b>';
+	 document.getElementById("Black_El_Paskudy").innerHTML=Divine;
+ } 
+ function Hammerout()
+ {
+	 document.getElementById("Black_El_Paskudy").innerHTML=mist;
+ }
  function katanyonm()
 {
 	let katany='<b style="color:green;">'+"RzutKatanami"+'</b>';
@@ -141,7 +155,8 @@ var podmianaJ=0;
 var Rotat=false;
     function rotat()
 {
-	
+	blokada=false;
+	HP.play();
 	document.getElementById("animee").style.display="none";
 	document.getElementById('WyswietlaczPaskudy').style.width = "50px";
 	document.getElementById('WyswietlaczPaskudy').style.height = "50px";
@@ -177,6 +192,10 @@ var Rotat=false;
 	podmianaJ=podmianaJ+y;
 	ZyciePaskudy=ZyciePaskudy+x;
 	Rotat=true;
+	if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},1950);
+	}
 	if(Rotat==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -199,6 +218,8 @@ var Rotat=false;
 var podmianaD=0;
     function tagsdwa()
 {
+	blokada=false;
+	
 	var skorka="Łap skórkę Odpadzie!";
 	var skorkaout="";
 	document.getElementById("Black_El_Paskudy").innerHTML=skorka;
@@ -239,7 +260,9 @@ var podmianaD=0;
 	easing: 'easeInOutQuad',
 	loop:false
 	});
-	
+	 setTimeout(function (){Skorka.play();},800);
+	 setTimeout(function (){Skorka.play();},2100);
+	 setTimeout(function (){Skorka.play();},3800);
 	setTimeout(function at(){document.getElementById("anim").style.display="none";},1500);
 	setTimeout(function ka(){document.getElementById("anim").style.display="block";},1502);
 	setTimeout(function akt(){document.getElementById("anim").style.display="none";},3002);
@@ -252,6 +275,10 @@ var podmianaD=0;
 	let Turn=true;
 	podmianaD=podmianaD+y;
 	ZycieLegiera=ZycieLegiera-x;
+	if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},5254);
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -274,7 +301,7 @@ var podmianaD=0;
 var podmianaT=0;
     function tagstrzy()
 {
-	
+	blokada=false;
 	ThunderStrike.play();
 	document.getElementById("trzy").style.display="none";
 	document.getElementById("anim").style.position="fixed";
@@ -310,6 +337,10 @@ var podmianaT=0;
 	let Turn=true;
 	podmianaT=podmianaT+y;
 	ZycieLegiera=ZycieLegiera-x;
+	if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},1480);
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -332,6 +363,9 @@ var podmianaT=0;
 var podmianaC=0;
     function tagscztery()
 {
+	
+	blokada=false;
+	Ryk.play();
 	document.getElementById("cztery").style.display="none";
 	document.getElementById("Ryk").style.display="block";
 	anime({
@@ -359,6 +393,10 @@ var podmianaC=0;
 	let Turn=true;
 	podmianaC=podmianaC+y;
 	ZycieLegiera=ZycieLegiera-x;
+	if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},3750);
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -381,6 +419,7 @@ var podmianaC=0;
 var podmianaP=0;
     function tagspiec()
 {
+	blokada=false;
 	document.getElementById("piec").style.display="none";
 	document.getElementById("starone").style.display="block";
 	document.getElementById("startwo").style.display="block";
@@ -422,7 +461,6 @@ var podmianaP=0;
 	loop:false
 	});
 	StarFall.play();
-	 setTimeout(function(){StarFall.play();},1500);
     setTimeout(function staroned(){document.getElementById("starone").style.display="none";},450);
     setTimeout(function starend(){document.getElementById("starone").style.display="block";},500);
     setTimeout(function staronedend(){document.getElementById("starone").style.display="none";},1200);
@@ -437,6 +475,10 @@ var podmianaP=0;
 	let Turn=true;
 	podmianaP=podmianaP+y;
 	ZycieLegiera=ZycieLegiera-x;
+	if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},1650);
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -460,6 +502,7 @@ var podmianaS=0;
 
 function tagsszesc()
 {
+	blokada=false;
 	Promien.play();
 	document.getElementById("szesc").style.display="none";
 	document.getElementById("anim").style.position="fixed";
@@ -495,6 +538,10 @@ function tagsszesc()
 	let Turn=true;
 	ZycieLegiera=ZycieLegiera-x;
 	podmianaS=podmianaS+y;
+	if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},3250);
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -518,6 +565,7 @@ function tagsszesc()
 
 function pierwszaanimLegiera()
 {
+	blokada=true;
 	let Turn=true;
 	document.getElementById("animeLeg").style.display="none";
 	document.getElementById("animacjaLegiera").style.display="block";
@@ -538,6 +586,10 @@ anime({
 });
 let x=75;
 ZyciePaskudy=ZyciePaskudy-x;
+if(blokada==true)
+	{
+		document.getElementById("bloked").style.display="none";
+	}
 if(Turn==true)
 {
 	setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -556,6 +608,7 @@ if(ZyciePaskudy<=0)
 }
 function drugaanimLegiera()
 {
+	blokada=true;
 	let Turn=true;
 	Shuriken.play();
 	document.getElementById("dwaL").style.display="none";
@@ -580,6 +633,10 @@ function drugaanimLegiera()
 	setTimeout(function shurike(){document.getElementById("TrzyLeg").style.display="none";},2000);
 	let x=5;
 	ZyciePaskudy=ZyciePaskudy-x;
+	if(blokada==true)
+	{
+		document.getElementById("bloked").style.display="none";
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -595,6 +652,7 @@ function drugaanimLegiera()
 }
 function trzeciaanimLegiera()
 {
+	blokada=true;
 	let Turn=true;
 	KunaiKnife.play();
 	document.getElementById("trzyL").style.display="none";
@@ -617,6 +675,10 @@ function trzeciaanimLegiera()
 	setTimeout(function kuna(){document.getElementById("CzteryLeg").style.display="none";},150);
 	let x=15;
 	ZyciePaskudy=ZyciePaskudy-x;
+	if(blokada==true)
+	{
+		document.getElementById("bloked").style.display="none";
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -634,6 +696,8 @@ function trzeciaanimLegiera()
 }
 function czwartaanimLeg()
 {
+	
+	blokada=true;
 	let Turn=true;
 	Mochi.play();
 	document.getElementById("czteryL").style.display="none";
@@ -656,6 +720,10 @@ function czwartaanimLeg()
 	setTimeout(function shurikenout(){document.getElementById("WyswietlaczLegiera").style.display="none";},800);
 	let x=50;
 	ZycieLegiera=ZycieLegiera+x;
+	if(blokada==true)
+	{
+		document.getElementById("bloked").style.display="none";
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -671,27 +739,10 @@ function czwartaanimLeg()
 	
 }
 
-	
-	
-function LegEgg()
-{
-	
-	anime({
-    targets: '#Legier',
-	keyframes: [ {borderRadius: ['0%', '50%']},{rotateZ: 67},{translateY: -400},{scale:2},{scale:0},{translateY: 0},{scale:1},{rotateZ: 0},{borderRadius: ['50%', '0%']},],
-	delay:300,
-    duration:2000,
-    easing: 'easeInOutQuad',
-  
- });
-    setTimeout(function Pan(){document.getElementById("odpLegiera").innerHTML=To;},1500);
-    setTimeout(function Panout(){document.getElementById("odpLegiera").innerHTML=mist;},2400);
-}
-
-
 function TLeg()
 {
 	Ostrza.play();
+	blokada=true;
 	let Turn=true;
 	 document.getElementById("divmocy").style.display="none";
 	 document.getElementById("TLeg").style.display="block";
@@ -726,11 +777,15 @@ anime({
 });
     setTimeout(function dis(){document.getElementById("TLeg").style.display="none";},2000);
 	setTimeout(function disteleg(){document.getElementById("TdwaLeg").style.display="none";},2000);
-    setTimeout(function smiech(){document.getElementById("Black_El_Paskudy").innerHTML=smieszne;},2500);
+    setTimeout(function smiech(){document.getElementById("Black_El_Paskudy").innerHTML=smieszne;},2000);
     setTimeout(function timeuper(){document.getElementById("divmocy").style.display="block";},2500);
     setTimeout(function smiechout(){document.getElementById("Black_El_Paskudy").innerHTML=mist;},2400);
 	let x=10;
 	ZyciePaskudy=ZyciePaskudy-x;
+	if(blokada==true)
+	{
+		document.getElementById("bloked").style.display="none";
+	}
 	if(Turn==true)
 	{
 		setTimeout(function(){document.getElementById("Tury").style.display="block";
@@ -744,21 +799,22 @@ anime({
 		document.getElementById("EndGame").style.display="block";},3000);
 	}
 }
+
+
+
+
+
 function anim()
 {
 	
-	document.getElementById("anim").style.position="fixed";
-	document.getElementById("anim").style.width="20px";
-	document.getElementById("anim").style.height="50px";
-	document.getElementById("anim").style.display="block";
-	document.getElementById("anim").style.backgroundImage='url("img/Harpun.png")';
+	document.getElementById("TPask").style.display="block";
+	document.getElementById("TPask").style.backgroundImage='url("img/DivineHammer2.png")';
 	anime({
-    targets: '#anim',
-    height:'70%',
-    duration:1000,
+    targets: '#TPask',
+	keyframes:[{rotateZ:-270,duration:900},{rotateZ:0,duration:1},],
     easing: 'easeInOutQuad',
     direction: 'alternate',
-    loop: 1
+    loop: false
 });
 
 	anime({
@@ -777,12 +833,25 @@ anime({
 	easing: 'easeInOutQuad',
 	loop:false
 });
-   setTimeout(function plain(){document.getElementById("anim").style.display="none";},2000);
+	anime({
+    targets: '#Legier',
+	keyframes: [ {borderRadius: ['0%', '50%']},{rotateZ: 67},{translateY: -400},{scale:2},{scale:0},{translateY: 0},{scale:1},{rotateZ: 0},{borderRadius: ['50%', '0%']},],
+	delay:300,
+    duration:2000,
+    easing: 'easeInOutQuad',
+  
+ });
+    setTimeout(function Pan(){document.getElementById("odpLegiera").innerHTML=To;},1500);
+    setTimeout(function Panout(){document.getElementById("odpLegiera").innerHTML=mist;},2400);
+   setTimeout(function plain(){document.getElementById("TPask").style.display="none";},900);
+   setTimeout(function(){DivineHammer.play();},500);
    setTimeout(function timerend(){document.getElementById("divmocyp").style.display="none";},100);
    setTimeout(function newskills()
 {
-	
+	let Turn=true;
+	let y=24.8;
 	let x=0;
+	blokada=false
   podmianaJ=x;	
   podmianaD=x;	
   podmianaT=x;	
@@ -795,30 +864,23 @@ anime({
   document.getElementById("cztery").style.display="block";
   document.getElementById("piec").style.display="block";
   document.getElementById("szesc").style.display="block";
+  ZycieLegiera=ZycieLegiera-y;
+  if(Turn==true)
+	{
+		setTimeout(function(){document.getElementById("Tury").style.display="block";
+		document.getElementById("tura").innerHTML='<b style="color:red">'+"LegierTurn"+'</b>';},2000);
+		setTimeout(function(){document.getElementById("Tury").style.display="none";},2300);
+	}
+  if(blokada==false)
+	{
+		setTimeout(function(){document.getElementById("bloked").style.display="block";},2000);
+	}
+  if(ZycieLegiera<=0)
+  {
+	alert("LegierPrzegrał");
+  }
 },2000);
 }
-
-/*    function tekstout()
-{
-	document.getElementById("tex").innerHTML=out;
-	
-}*/
-
-function Snk(onclick)
-{
-
-	 LegEgg();
-	anim();
-
-}
-
-
-
-//var tab = [rotat, tagsdwa, tagstrzy];
-
-
-
-
 
 function Moc()
 {
@@ -835,7 +897,7 @@ var tagspiecf=true;
 var tagsszescf=true;
 function randomskill(){
  var rand=[0,1,2,3,4,5];
-	var raned=[];
+	
 
      for(var r=0;r<=rand.length;r++)
 	 {
@@ -875,6 +937,15 @@ function randomskill(){
 		{
 			tagsszesc();
 			tagsszescf=false;
+		}
+		else if(rotatf==false&&tagsdwaf==false&&tagstrzyf==false&&tagsczteryf==false&&tagspiecf==false&&tagsszescf==false){
+			rotatf=true
+			tagsdwaf=true
+			tagstrzyf=true
+			tagsczteryf=true
+			tagspiecf=true
+			tagsszescf=true
+			anim();
 		}
 		else{
 			randomskill();
