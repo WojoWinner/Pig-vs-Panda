@@ -194,7 +194,7 @@ var Rotat=false;
 	Rotat=true;
 	if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},1950);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},1950);
 	}
 	if(Rotat==true)
 	{
@@ -220,8 +220,8 @@ var podmianaD=0;
 {
 	blokada=false;
 	
-	var skorka="Łap skórkę Odpadzie!";
-	var skorkaout="";
+	let skorka="Łap skórkę Odpadzie!";
+	let skorkaout="";
 	document.getElementById("Black_El_Paskudy").innerHTML=skorka;
 	document.getElementById("dwa").style.display="none";
 	document.getElementById("anim").style.position="relative";
@@ -277,7 +277,7 @@ var podmianaD=0;
 	ZycieLegiera=ZycieLegiera-x;
 	if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},5254);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},5254);
 	}
 	if(Turn==true)
 	{
@@ -339,7 +339,7 @@ var podmianaT=0;
 	ZycieLegiera=ZycieLegiera-x;
 	if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},1480);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},1480);
 	}
 	if(Turn==true)
 	{
@@ -395,7 +395,7 @@ var podmianaC=0;
 	ZycieLegiera=ZycieLegiera-x;
 	if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},3750);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},3750);
 	}
 	if(Turn==true)
 	{
@@ -477,7 +477,7 @@ var podmianaP=0;
 	ZycieLegiera=ZycieLegiera-x;
 	if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},1650);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},1650);
 	}
 	if(Turn==true)
 	{
@@ -540,7 +540,7 @@ function tagsszesc()
 	podmianaS=podmianaS+y;
 	if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},3250);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},3250);
 	}
 	if(Turn==true)
 	{
@@ -588,7 +588,7 @@ let x=75;
 ZyciePaskudy=ZyciePaskudy-x;
 if(blokada==true)
 	{
-		document.getElementById("bloked").style.display="none";
+		document.getElementById("blocked").style.display="none";
 	}
 if(Turn==true)
 {
@@ -635,7 +635,7 @@ function drugaanimLegiera()
 	ZyciePaskudy=ZyciePaskudy-x;
 	if(blokada==true)
 	{
-		document.getElementById("bloked").style.display="none";
+		document.getElementById("blocked").style.display="none";
 	}
 	if(Turn==true)
 	{
@@ -677,7 +677,7 @@ function trzeciaanimLegiera()
 	ZyciePaskudy=ZyciePaskudy-x;
 	if(blokada==true)
 	{
-		document.getElementById("bloked").style.display="none";
+		document.getElementById("blocked").style.display="none";
 	}
 	if(Turn==true)
 	{
@@ -722,7 +722,7 @@ function czwartaanimLeg()
 	ZycieLegiera=ZycieLegiera+x;
 	if(blokada==true)
 	{
-		document.getElementById("bloked").style.display="none";
+		document.getElementById("blocked").style.display="none";
 	}
 	if(Turn==true)
 	{
@@ -784,7 +784,7 @@ anime({
 	ZyciePaskudy=ZyciePaskudy-x;
 	if(blokada==true)
 	{
-		document.getElementById("bloked").style.display="none";
+		document.getElementById("blocked").style.display="none";
 	}
 	if(Turn==true)
 	{
@@ -873,7 +873,7 @@ anime({
 	}
   if(blokada==false)
 	{
-		setTimeout(function(){document.getElementById("bloked").style.display="block";},2000);
+		setTimeout(function(){document.getElementById("blocked").style.display="block";},2000);
 	}
   if(ZycieLegiera<=0)
   {
@@ -896,10 +896,10 @@ var tagsczteryf=true;
 var tagspiecf=true;
 var tagsszescf=true;
 function randomskill(){
- var rand=[0,1,2,3,4,5];
+ let rand=[0,1,2,3,4,5];
 	
 
-     for(var r=0;r<=rand.length;r++)
+     for(let r=0;r<=rand.length;r++)
 	 {
 		  var randomowy = Math.floor(Math.random() * rand.length);
 		  
